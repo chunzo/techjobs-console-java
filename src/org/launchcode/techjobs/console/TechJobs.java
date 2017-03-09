@@ -40,6 +40,7 @@ public class TechJobs {
                 } else {
 
                     ArrayList<String> results = JobData.findAll(columnChoice);
+                    // sort alphabetically
                     results.sort(String::compareToIgnoreCase);
 
                     System.out.println("\n*** All " + columnChoices.get(columnChoice) + " Values ***");

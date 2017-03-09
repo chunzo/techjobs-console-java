@@ -52,6 +52,7 @@ public class JobData {
         // load data, if not already loaded
         loadData();
 
+        // copy of allJobs??
         ArrayList<HashMap<String, String>> copyJobs = new ArrayList<>(allJobs);
 
         return copyJobs;
@@ -95,6 +96,7 @@ public class JobData {
 
         for (HashMap<String, String> job : allJobs) {
             for (String key : job.values()) {
+                // case insensitive
                 if (key.toLowerCase().contains(value.toLowerCase())) {
                     jobs.add(job);
                     break;
