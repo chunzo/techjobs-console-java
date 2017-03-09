@@ -120,7 +120,7 @@ public class TechJobs {
         }
 
         if (someJobs.size() < 1) {
-            System.out.println("no available jobs");
+            System.out.println("no jobs available");
         }
     }
 }
